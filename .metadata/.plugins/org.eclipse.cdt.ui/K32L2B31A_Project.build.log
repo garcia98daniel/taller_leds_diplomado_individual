@@ -1,0 +1,6 @@
+17:15:57 **** Incremental Build of configuration Debug for project K32L2B31A_Project ****
+make -r -j8 all 
+make: Nothing to be done for 'all'.
+
+17:15:57 Build Finished. 0 errors, 0 warnings. (took 242ms)
+

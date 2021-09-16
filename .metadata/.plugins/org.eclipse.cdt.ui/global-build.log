@@ -1,0 +1,19 @@
+17:15:38 **** Incremental Build of configuration Debug for project K32L2B31A_Project ****
+make -r -j8 all 
+Building target: K32L2B31A_Project.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -Xlinker -Map="K32L2B31A_Project.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T K32L2B31A_Project_Debug.ld -o "K32L2B31A_Project.axf"  ./utilities/fsl_debug_console.o ./utilities/fsl_str.o  ./startup/startup_k32l2b31a.o  ./source/K32L2B31A_Project.o ./source/mtb.o ./source/semihost_hardfault.o  ./slcd/LCD-S401M16KR.o ./slcd/slcd_engine.o  ./iot_sdk/iot_sdk_peripherals/leds.o  ./freertos/freertos_kernel/portable/MemMang/heap_4.o  ./freertos/freertos_kernel/portable/GCC/ARM_CM0/port.o  ./freertos/freertos_kernel/croutine.o ./freertos/freertos_kernel/event_groups.o ./freertos/freertos_kernel/list.o ./freertos/freertos_kernel/queue.o ./freertos/freertos_kernel/stream_buffer.o ./freertos/freertos_kernel/tasks.o ./freertos/freertos_kernel/timers.o  ./drivers/freertos/fsl_i2c_freertos.o ./drivers/freertos/fsl_lpuart_freertos.o ./drivers/freertos/fsl_spi_freertos.o ./drivers/freertos/fsl_uart_freertos.o  ./drivers/fsl_adc16.o ./drivers/fsl_clock.o ./drivers/fsl_cmp.o ./drivers/fsl_common.o ./drivers/fsl_common_arm.o ./drivers/fsl_cop.o ./drivers/fsl_dac.o ./drivers/fsl_dma.o ./drivers/fsl_dmamux.o ./drivers/fsl_flexio.o ./drivers/fsl_flexio_i2c_master.o ./drivers/fsl_flexio_i2s.o ./drivers/fsl_flexio_i2s_dma.o ./drivers/fsl_flexio_spi.o ./drivers/fsl_flexio_spi_dma.o ./drivers/fsl_flexio_uart.o ./drivers/fsl_flexio_uart_dma.o ./drivers/fsl_ftfx_cache.o ./drivers/fsl_ftfx_controller.o ./drivers/fsl_ftfx_flash.o ./drivers/fsl_ftfx_flexnvm.o ./drivers/fsl_gpio.o ./drivers/fsl_i2c.o ./drivers/fsl_i2c_dma.o ./drivers/fsl_llwu.o ./drivers/fsl_lptmr.o ./drivers/fsl_lpuart.o ./drivers/fsl_lpuart_dma.o ./drivers/fsl_pit.o ./drivers/fsl_pmc.o ./drivers/fsl_rcm.o ./drivers/fsl_rtc.o ./drivers/fsl_sim.o ./drivers/fsl_slcd.o ./drivers/fsl_smc.o ./drivers/fsl_spi.o ./drivers/fsl_spi_dma.o ./drivers/fsl_tpm.o ./drivers/fsl_uart.o ./drivers/fsl_uart_dma.o ./drivers/fsl_vref.o  ./device/system_K32L2B31A.o  ./component/uart/fsl_adapter_lpuart.o  ./component/timer_manager/fsl_component_timer_manager.o  ./component/timer/fsl_adapter_lptmr.o  ./component/serial_manager/fsl_component_serial_manager.o ./component/serial_manager/fsl_component_serial_port_uart.o  ./component/osa/fsl_os_abstraction_free_rtos.o  ./component/lists/fsl_component_generic_list.o  ./component/led/fsl_component_led.o  ./component/gpio/fsl_adapter_gpio.o  ./component/common_task/fsl_component_common_task.o  ./component/button/fsl_component_button.o  ./board/board.o ./board/clock_config.o ./board/peripherals.o ./board/pin_mux.o  ./accel/fsl_fxos.o   
+Memory region         Used Size  Region Size  %age Used
+   PROGRAM_FLASH:       21968 B       256 KB      8.38%
+            SRAM:        4724 B        32 KB     14.42%
+Finished building target: K32L2B31A_Project.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "K32L2B31A_Project.axf"; # arm-none-eabi-objcopy -v -O binary "K32L2B31A_Project.axf" "K32L2B31A_Project.bin" ; # checksum -p K32L2B31xxxxA -d "K32L2B31A_Project.bin";
+   text	   data	    bss	    dec	    hex	filename
+  21960	      8	   4716	  26684	   683c	K32L2B31A_Project.axf
+ 
+17:15:57 **** Incremental Build of configuration Debug for project K32L2B31A_Project ****
+make -r -j8 all 
+make: Nothing to be done for 'all'.
